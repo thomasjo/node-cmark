@@ -1,6 +1,5 @@
 # Dependency directories
 node_modules/
-jspm_packages/
 
 # Optional npm cache directory
 .npm/
@@ -8,5 +7,5 @@ jspm_packages/
 # Logs
 npm-debug.log*
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# Compiled dependencies
+build/
