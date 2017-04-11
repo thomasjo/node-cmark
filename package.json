@@ -1,0 +1,9 @@
+{ "name": "cmark"
+, "version": "0.0.1"
+, "description": "Node.js wrapper for GitHub's fork of cmark"
+, "main": "index.js"
+, "repository": "thomasjo/node-cmark"
+, "keywords": [ "cmark", "commonmark", "markdown", "gfm" ]
+, "author": "Thomas Johansen <thomasjo@gmail.com>"
+, "license": "MIT"
+}
