@@ -8,7 +8,9 @@
     , 'vendor/cmark/build/extensions'
     ]
   , 'sources':
-    [ 'src/binding.cpp'
+    [ 'src/cmark.cpp'
+    , 'src/common.cpp'
+    , 'src/sync.cpp'
     , 'vendor/cmark/src/arena.c'
     , 'vendor/cmark/src/blocks.c'
     , 'vendor/cmark/src/buffer.c'
