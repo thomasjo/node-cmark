@@ -16,6 +16,7 @@ std::string cmark::markdown_to_html(const std::string& markdown, const int optio
   cmark_parser_feed(parser, markdown.c_str(), markdown.size());
   const auto nodes = cmark_parser_finish(parser);
   const auto html = cmark_render_html(nodes, options, parser->syntax_extensions);
+  cmark_node_free(nodes);
   cmark_parser_free(parser);
 
   return html;
