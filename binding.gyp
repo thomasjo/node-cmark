@@ -11,7 +11,7 @@
       ],
       'sources': [
         'src/cmark.cpp',
-        'src/common.cpp'
+        'src/common.cpp',
         'src/sync.cpp',
         # TODO: Automate or improve this external source listing stuff?
         'vendor/cmark/src/arena.c',
