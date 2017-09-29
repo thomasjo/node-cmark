@@ -7,7 +7,7 @@
 
 void cmark::initialize()
 {
-  cmark_register_plugin(core_extensions_registration);
+  core_extensions_ensure_registered();
 }
 
 std::string cmark::markdown_to_html(const std::string& markdown, const int options)
