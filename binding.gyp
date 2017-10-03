@@ -31,6 +31,7 @@
         'vendor/cmark/src/main.c',
         'vendor/cmark/src/man.c',
         'vendor/cmark/src/node.c',
+        'vendor/cmark/src/plaintext.c',
         'vendor/cmark/src/plugin.c',
         'vendor/cmark/src/references.c',
         'vendor/cmark/src/registry.c',
