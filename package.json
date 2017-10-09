@@ -2,7 +2,12 @@
   "name": "cmark",
   "version": "0.0.2",
   "description": "Node.js wrapper for GitHub's fork of cmark",
-  "keywords": [ "cmark", "commonmark", "markdown", "gfm" ],
+  "keywords": [
+    "cmark",
+    "commonmark",
+    "markdown",
+    "gfm"
+  ],
   "license": "MIT",
   "repository": "thomasjo/node-cmark",
   "author": "Thomas Johansen <thomasjo@gmail.com>",

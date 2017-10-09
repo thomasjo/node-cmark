@@ -10,7 +10,7 @@
         'vendor/cmark/build/extensions',
       ],
       'sources': [
-        'src/cmark.cpp',
+        'src/binding.cpp',
         'src/common.cpp',
         'src/sync.cpp',
         # TODO: Automate or improve this external source listing stuff?

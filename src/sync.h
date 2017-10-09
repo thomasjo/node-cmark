@@ -4,6 +4,6 @@
 
 namespace cmark {
 
-NAN_METHOD(render_html);
+NAN_METHOD(render_html_sync);
 
 }  // namespace cmark

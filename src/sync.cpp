@@ -6,11 +6,12 @@
 #include <v8.h>
 
 #include "common.h"
-#include "kitchen_sink.h"
 
-NAN_METHOD(cmark::render_html)
+NAN_METHOD(cmark::render_html_sync)
 {
-  const auto markdown = convert_to_string(info[0]);
+  const auto markdown = *Nan::Utf8String(info[0]->ToString());
   const auto html = cmark::markdown_to_html(markdown, 0);
-  set_return_value(info, convert_to_value(html));
+
+  auto return_value = info.GetReturnValue();
+  return_value.Set(Nan::New(html).ToLocalChecked());
 }
