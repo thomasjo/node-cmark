@@ -8,7 +8,7 @@ describe('Rendering', () => {
     expect(() => cmark.toHtml()).to.throw(Error)
   })
 
-  it('throws an error when the first argument is missing', () => {
+  it('throws an error when the first argument is undefined', () => {
     expect(() => cmark.toHtml(undefined)).to.throw(TypeError)
   })
 
@@ -17,8 +17,8 @@ describe('Rendering', () => {
   })
 
   it('returns HTML for the given markdown', () => {
-    const markdown = 'foo [bar]()'
-    const expected = '<p>foo <a href="">bar</a></p>\n'
+    const markdown = 'foo'
+    const expected = '<p>foo</p>\n'
 
     const result = cmark.toHtml(markdown)
     expect(result).to.equal(expected)
