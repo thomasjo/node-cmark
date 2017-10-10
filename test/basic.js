@@ -16,6 +16,10 @@ describe('Rendering', () => {
     expect(() => cmark.toHtml(null)).to.throw(TypeError)
   })
 
+  it('throws an error when the first argument is a number', () => {
+    expect(() => cmark.toHtml(1)).to.throw(TypeError)
+  })
+
   it('returns HTML for the given markdown', () => {
     const markdown = 'foo'
     const expected = '<p>foo</p>\n'
