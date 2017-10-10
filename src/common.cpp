@@ -10,13 +10,15 @@ void cmark::initialize()
   core_extensions_ensure_registered();
 }
 
-std::string cmark::markdown_to_html(const std::string& markdown, const int options)
+std::string cmark::markdown_to_html(
+  const std::string& markdown, const int options)
 {
   const auto parser = cmark_parser_new(options);
 
   cmark_parser_feed(parser, markdown.c_str(), markdown.size());
   const auto nodes = cmark_parser_finish(parser);
-  const auto html = cmark_render_html(nodes, options, parser->syntax_extensions);
+  const auto html = cmark_render_html(
+    nodes, options, parser->syntax_extensions);
 
   cmark_node_free(nodes);
   cmark_parser_free(parser);

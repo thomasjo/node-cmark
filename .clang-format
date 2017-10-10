@@ -1,15 +1,24 @@
+---
 Language: Cpp
 BasedOnStyle: Google
 Standard: Cpp11
 
-ColumnLimit: 120
+ColumnLimit: 80
 BreakBeforeBraces: Stroustrup
 SpaceAfterTemplateKeyword: false
+
+AlignAfterOpenBracket: AlwaysBreak
+BinPackArguments: false
+BinPackParameters: false
+ContinuationIndentWidth: 2
 
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: Empty
 
 FixNamespaceComments: true
+
+SortIncludes: true
+SortUsingDeclarations: true
 
 IncludeCategories:
   - Regex:           '^<.*\.h>'
@@ -18,3 +27,7 @@ IncludeCategories:
     Priority:        1
   - Regex:           '.*'
     Priority:        3
+
+PenaltyBreakAssignment: 1000
+
+...
